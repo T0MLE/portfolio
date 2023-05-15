@@ -1,0 +1,9 @@
+$main-color : #2779a7;
+
+
+.home-container {
+    width: calc(100% - 180px);
+    margin : auto;
+    border-left: 1.5px solid $main-color;
+    border-right: 1.5px solid $main-color;
+}
