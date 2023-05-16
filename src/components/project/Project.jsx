@@ -1,7 +1,14 @@
 import "./project.scss";
+import PropTypes from "prop-types";
 
-function Project() {
-  return <div className="project"></div>;
+function Project({ img }) {
+  return (
+    <div className="project" style={{ backgroundImage: `url(${img})` }}></div>
+  );
 }
 
 export default Project;
+
+Project.propTypes = {
+  img: PropTypes.string.isRequired,
+};

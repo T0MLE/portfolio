@@ -3,6 +3,7 @@ import Draggable from "react-draggable";
 import Project from "../project/Project";
 import ScrollingText from "../ScrollingText/ScrollingText";
 import "./projects.scss";
+import WFC from "../../assets/WFC.png";
 
 function Projects() {
   const [zIndex, setZIndex] = useState({ div1: 3, div2: 2, div3: 1 });
@@ -33,12 +34,16 @@ function Projects() {
           >
             <strong>
               <div className="handle">
-                <div className="dot" />
-                <div className="dot" />
-                <div className="dot" />
+                <div className="dots">
+                  {" "}
+                  <div className="dot" />
+                  <div className="dot" />
+                  <div className="dot" />
+                </div>
+                Wild_Fitness_Club.png
               </div>
             </strong>
-            <Project />
+            <Project img={WFC} />
           </div>
         </Draggable>
         <Draggable
@@ -52,9 +57,13 @@ function Projects() {
           >
             <strong>
               <div className="handle">
-                <div className="dot" />
-                <div className="dot" />
-                <div className="dot" />
+                <div className="dots">
+                  {" "}
+                  <div className="dot" />
+                  <div className="dot" />
+                  <div className="dot" />
+                </div>
+                CV_MARIO.png
               </div>
             </strong>
             <Project />
@@ -71,9 +80,13 @@ function Projects() {
           >
             <strong>
               <div className="handle">
-                <div className="dot" />
-                <div className="dot" />
-                <div className="dot" />
+                <div className="dots">
+                  {" "}
+                  <div className="dot" />
+                  <div className="dot" />
+                  <div className="dot" />
+                </div>
+                Wonder_Match.png
               </div>
             </strong>
             <Project />

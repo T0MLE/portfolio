@@ -2,6 +2,8 @@ $main-color : #260F71;
 
 
 .project {
+    background-size: contain;
+    background-repeat: no-repeat;
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     border: 1px solid $main-color;
