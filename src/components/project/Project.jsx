@@ -1,5 +1,7 @@
+import "./project.scss";
+
 function Project() {
-  return <div>Project</div>;
+  return <div className="project"></div>;
 }
 
 export default Project;

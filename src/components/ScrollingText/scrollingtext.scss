@@ -1,12 +1,16 @@
 $First-font : myFirstFont;
+$main-color : #260F71;
 
 
 .scrollingtext-container {
+    display: flex;
+    align-items: center;
     white-space: nowrap;
     overflow: hidden;
-    font-size: 4rem;
+    font-size: 5rem;
     position: relative;
     height: 200px;
+    border-bottom: 1px solid $main-color;
 
     div {
         position: absolute;

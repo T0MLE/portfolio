@@ -1,12 +1,12 @@
 import Header from "../../components/Header/Header";
-import ScrollingText from "../../components/ScrollingText/ScrollingText";
+import Projects from "../../components/Projects/Projects";
 import "./home.scss";
 
 function Home() {
   return (
     <div className="home-container">
       <Header />
-      <ScrollingText />
+      <Projects />
     </div>
   );
 }
