@@ -4,6 +4,8 @@ import Project from "../project/Project";
 import ScrollingText from "../ScrollingText/ScrollingText";
 import "./projects.scss";
 import WFC from "../../assets/WFC.png";
+import mario from "../../assets/mario.png";
+import wonder from "../../assets/wondermatch.png";
 
 function Projects() {
   const [zIndex, setZIndex] = useState({ div1: 3, div2: 2, div3: 1 });
@@ -43,7 +45,7 @@ function Projects() {
                 Wild_Fitness_Club.png
               </div>
             </strong>
-            <Project img={WFC} />
+            <Project img={WFC} stack={["HTML", "CSS", "React"]}/>
           </div>
         </Draggable>
         <Draggable
@@ -66,7 +68,7 @@ function Projects() {
                 CV_MARIO.png
               </div>
             </strong>
-            <Project />
+            <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
           </div>
         </Draggable>
         <Draggable
@@ -89,7 +91,7 @@ function Projects() {
                 Wonder_Match.png
               </div>
             </strong>
-            <Project />
+            <Project img={wonder} stack={["HTML", "CSS", "React"]} />
           </div>
         </Draggable>
       </div>

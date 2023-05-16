@@ -1,6 +1,8 @@
 $main-color : #260F71;
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
 $second-font : Josefin sans ;
+$First-font : myFirstFont;
+
 
 .navbar {
     position: fixed;
@@ -15,24 +17,21 @@ $second-font : Josefin sans ;
     padding: 0 32px;
     z-index: 900;
     p {
-        font-size: 1rem;
+        font-size: 1.3rem;
         font-family: $second-font;
 
     }
 
     .contact-btn {
-        // font-family: $second-font;
+        font-family: $second-font;
         text-decoration: none;
         border: 1px solid $main-color;
         border-radius: 100px;
-        padding: 9px 14px;
+        padding: 9px 14px 7px 14px;;
         background-color: #F6F7FA;
         font-size: 1rem;
         &:hover {
             background-color: #f0EDFF;
-        }
-        span {
-            height: 16px;
         }
     }
 }
