@@ -1,8 +1,37 @@
-$main-color : #2779a7;
-
+$main-color : #260F71;
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+$second-font : Josefin sans ;
 
 .navbar {
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 60px;
-    border-bottom: 1.5px solid $main-color;
+    border-bottom: 1px solid $main-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 32px;
+    p {
+        font-size: 1rem;
+        font-family: $second-font;
+
+    }
+
+    .contact-btn {
+        // font-family: $second-font;
+        text-decoration: none;
+        border: 1px solid $main-color;
+        border-radius: 100px;
+        padding: 9px 14px;
+        background-color: #F6F7FA;
+        font-size: 1rem;
+        &:hover {
+            background-color: #f0EDFF;
+        }
+        span {
+            height: 16px;
+        }
+    }
 }
