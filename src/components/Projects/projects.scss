@@ -7,12 +7,14 @@ $main-color : #260F71;
     height: 100vh;
     position: relative;
     padding: 16px;
+    border-bottom: 1px solid $main-color;
 
     .project-card {
         border-top-left-radius: 16px;
         border-top-right-radius: 16px;
         height: 26vw;
         width: 40%;
+        margin-bottom: 32px;
     }
         
         .card1 {
@@ -53,6 +55,7 @@ $main-color : #260F71;
             display: flex;
             align-items: center;
             left : 8px;
+            background-color: transparent;
             .dot {
                 border-radius: 50%;
                 height: 15px;

@@ -35,7 +35,7 @@ function Projects() {
             style={{ zIndex: `${zIndex["div1"]}` }}
           >
             <strong>
-              <div className="handle">
+              <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
                 <div className="dots">
                   {" "}
                   <div className="dot" />
@@ -45,7 +45,7 @@ function Projects() {
                 Wild_Fitness_Club.png
               </div>
             </strong>
-            <Project img={WFC} stack={["HTML", "CSS", "React"]}/>
+            <Project img={WFC} stack={["HTML", "CSS", "React"]} />
           </div>
         </Draggable>
         <Draggable
@@ -58,7 +58,7 @@ function Projects() {
             style={{ zIndex: `${zIndex["div2"]}` }}
           >
             <strong>
-              <div className="handle">
+              <div className="handle" style={{ backgroundColor: "#fffbe0" }}>
                 <div className="dots">
                   {" "}
                   <div className="dot" />
@@ -81,7 +81,7 @@ function Projects() {
             style={{ zIndex: `${zIndex["div3"]}` }}
           >
             <strong>
-              <div className="handle">
+              <div className="handle" style={{ backgroundColor: "#F8EAFF" }}>
                 <div className="dots">
                   {" "}
                   <div className="dot" />
