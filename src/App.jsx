@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, useLocation } from "react-router-dom";
 import LocomotiveScroll from "locomotive-scroll";
 import "./App.scss";
 import Cursor from "./components/cursor";
@@ -11,14 +11,19 @@ import Mario from "./pages/Mario/Mario";
 
 function App() {
   const scrollRef = useRef();
+  const location = useLocation();
 
   useEffect(() => {
-    new LocomotiveScroll({
+    const scroll = new LocomotiveScroll({
       el: scrollRef.current,
       smooth: true,
       lerp: 0.1,
     });
-  }, []);
+
+    return () => {
+      scroll.destroy();
+    };
+  }, [location]);
 
   return (
     <>

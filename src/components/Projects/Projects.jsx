@@ -6,7 +6,7 @@ import "./projects.scss";
 import WFC from "../../assets/WFC.png";
 import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function Projects() {
   const text =
@@ -22,6 +22,12 @@ function Projects() {
         [divID]: max + 1,
       };
     });
+  };
+
+  const navigate = useNavigate();
+
+  const handleClick = (route) => {
+    navigate(route);
   };
 
   return (
@@ -48,9 +54,10 @@ function Projects() {
                 Wild_Fitness_Club.png
               </div>
             </strong>
-            <Link to="/wildfitnessclub">
+            <div onClick={() => handleClick("/wildfitnessclub")}>
+              {" "}
               <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
-            </Link>
+            </div>
           </div>
         </Draggable>
         <Draggable
@@ -73,8 +80,8 @@ function Projects() {
                 CV_MARIO.png
               </div>
             </strong>
-            <Link to='/cvmario'>
-            <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
+            <Link to="/cvmario">
+              <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
             </Link>
           </div>
         </Draggable>
@@ -99,7 +106,7 @@ function Projects() {
               </div>
             </strong>
             <Link to="/wondermatch">
-            <Project img={wonder} stack={["HTML", "CSS", "React"]} />
+              <Project img={wonder} stack={["HTML", "CSS", "React"]} />
             </Link>
           </div>
         </Draggable>
