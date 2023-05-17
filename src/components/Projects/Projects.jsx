@@ -73,7 +73,9 @@ function Projects() {
                 CV_MARIO.png
               </div>
             </strong>
+            <Link to='/cvmario'>
             <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
+            </Link>
           </div>
         </Draggable>
         <Draggable
@@ -96,7 +98,9 @@ function Projects() {
                 Wonder_Match.png
               </div>
             </strong>
+            <Link to="/wondermatch">
             <Project img={wonder} stack={["HTML", "CSS", "React"]} />
+            </Link>
           </div>
         </Draggable>
       </div>
