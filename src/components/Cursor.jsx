@@ -15,7 +15,6 @@ function Cursor() {
 
   new RETICOOL(config);
 
-  console.warn(RETICOOL);
 }
 
 export default Cursor;
