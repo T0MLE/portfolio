@@ -8,6 +8,8 @@ import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
 
 function Projects() {
+  const text =
+    "PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS *";
   const [zIndex, setZIndex] = useState({ div1: 3, div2: 2, div3: 1 });
 
   const handleDrag = (divID) => {
@@ -23,7 +25,7 @@ function Projects() {
 
   return (
     <>
-      <ScrollingText />
+      <ScrollingText content={text} direction='left' />
       <div className="draggable-container">
         <Draggable
           handle="strong"
