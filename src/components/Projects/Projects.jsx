@@ -45,7 +45,7 @@ function Projects() {
                 Wild_Fitness_Club.png
               </div>
             </strong>
-            <Project img={WFC} stack={["HTML", "CSS", "React"]} />
+            <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
           </div>
         </Draggable>
         <Draggable
