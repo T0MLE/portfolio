@@ -17,6 +17,27 @@ $First-font : myFirstFont;
     color: $main-color;
 }
 
+.hidden {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  width: 4000px;
+  height: 0px;
+  background-color: $main-color;
+}
+
+.transition {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  width: 4000px;
+  height: 9000px;
+  background-color: $main-color;
+  transition: all 2s ease-in-out;
+}
+
 .RETICOOL {
   color: transparent !important;
   background-color: transparent !important;

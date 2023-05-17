@@ -6,7 +6,7 @@ import "./projects.scss";
 import WFC from "../../assets/WFC.png";
 import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const text =
@@ -80,9 +80,9 @@ function Projects() {
                 CV_MARIO.png
               </div>
             </strong>
-            <Link to="/cvmario">
+            <div onClick={() => handleClick("/cvmario")}>
               <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
-            </Link>
+            </div>
           </div>
         </Draggable>
         <Draggable
@@ -105,9 +105,9 @@ function Projects() {
                 Wonder_Match.png
               </div>
             </strong>
-            <Link to="/wondermatch">
+            <div onClick={() => handleClick("/wondermatch")}>
               <Project img={wonder} stack={["HTML", "CSS", "React"]} />
-            </Link>
+            </div>
           </div>
         </Draggable>
       </div>

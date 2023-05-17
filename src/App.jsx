@@ -26,7 +26,7 @@ function App() {
   }, [location]);
 
   return (
-    <>
+    <div className="App">
       <Cursor />
       <Navbar />
       <div ref={scrollRef}>
@@ -37,7 +37,7 @@ function App() {
           <Route path="/wondermatch" element={<WonderMatch />} />
         </Routes>
       </div>
-    </>
+    </div>
   );
 }
 
