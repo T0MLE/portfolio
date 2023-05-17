@@ -16,3 +16,15 @@ $First-font : myFirstFont;
     box-sizing: border-box;
     color: $main-color;
 }
+
+.RETICOOL {
+  color: transparent !important;
+  background-color: transparent !important;
+}
+.RETICOOL__circle {
+  background-color: transparent !important;
+}
+
+.RETICOOL__circle-anim {
+  width: 12px !important;
+}

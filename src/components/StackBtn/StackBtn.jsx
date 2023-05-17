@@ -2,7 +2,7 @@ import "./stackbtn.scss";
 import PropTypes from "prop-types";
 
 function StackBtn({ content }) {
-  return <button className="stack-btn">{content}</button>;
+  return <div className="stack-btn">{content}</div>;
 }
 
 export default StackBtn;
