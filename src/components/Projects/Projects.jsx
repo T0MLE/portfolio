@@ -6,6 +6,7 @@ import "./projects.scss";
 import WFC from "../../assets/WFC.png";
 import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
+import { Link } from "react-router-dom";
 
 function Projects() {
   const text =
@@ -25,7 +26,7 @@ function Projects() {
 
   return (
     <>
-      <ScrollingText content={text} direction='left' />
+      <ScrollingText content={text} direction="left" />
       <div className="draggable-container">
         <Draggable
           handle="strong"
@@ -47,7 +48,9 @@ function Projects() {
                 Wild_Fitness_Club.png
               </div>
             </strong>
-            <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
+            <Link to="/wildfitnessclub">
+              <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
+            </Link>
           </div>
         </Draggable>
         <Draggable
