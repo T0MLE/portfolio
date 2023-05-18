@@ -50,3 +50,26 @@ $second-font : Josefin sans ;
     }
 
 }
+
+@media screen and (max-width: 700px) {
+    .header {
+        padding: 0 16px;
+
+
+        h1 {
+            font-size: 4rem;
+            line-height: 4rem;
+        }
+        h2{
+
+            font-size: 3rem;
+            margin-bottom: 24px;
+            line-height: 3rem;
+        }
+        p {
+            font-size: 1rem;
+    
+        }
+    }
+
+}

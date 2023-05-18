@@ -13,7 +13,7 @@ function Cursor() {
     lockExpand: 0,
   };
 
-  new RETICOOL(config);
+  window.innerWidth >= 1000 && new RETICOOL(config);
 }
 
 export default Cursor;

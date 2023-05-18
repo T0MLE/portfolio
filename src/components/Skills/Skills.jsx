@@ -6,8 +6,6 @@ import {
   World,
   Bodies,
   Render,
-  Events,
-  Bounds,
   Mouse,
   MouseConstraint,
   Runner,
@@ -40,7 +38,7 @@ function Skills() {
       options: {
         width: canvasRef.current.offsetWidth,
         height: canvasRef.current.offsetHeight,
-        pixelRatio: 2,
+        pixelRatio: 3,
         wireframes: false,
         background: "transparent",
       },
@@ -53,21 +51,21 @@ function Skills() {
       160,
       { render: { fillStyle: "transparent" }, isStatic: true }
     );
-    var wallLeft = Bodies.rectangle(
+    const wallLeft = Bodies.rectangle(
       -80,
       canvasRef.current.offsetHeight / 2,
       160,
       canvasRef.current.offsetHeight,
       { isStatic: true }
     );
-    var wallRight = Bodies.rectangle(
+    const wallRight = Bodies.rectangle(
       canvasRef.current.offsetWidth + 80,
       canvasRef.current.offsetHeight / 2,
       160,
       1200,
       { isStatic: true }
     );
-    var roof = Bodies.rectangle(
+    const roof = Bodies.rectangle(
       canvasRef.current.offsetWidth / 2 + 160,
       -80,
       canvasRef.current.offsetWidth + 320,
@@ -171,7 +169,7 @@ function Skills() {
       skills,
     ]);
 
-    var mouse = Mouse.create(render.canvas),
+    const mouse = Mouse.create(render.canvas),
       mouseConstraint = MouseConstraint.create(engine, {
         mouse: mouse,
         constraint: {
@@ -183,47 +181,13 @@ function Skills() {
       });
 
     World.add(world, mouseConstraint);
-
     // keep the mouse in sync with rendering
+
     render.mouse = mouse;
 
     // Allow page scrolling in matter.js window
     mouse.element.removeEventListener("mousewheel", mouse.mousewheel);
     mouse.element.removeEventListener("DOMMouseScroll", mouse.mousewheel);
-
-    // Detect clicks vs. drags
-    let click = false;
-
-    document.addEventListener("mousedown", () => (click = true));
-    document.addEventListener("mousemove", () => (click = false));
-    document.addEventListener("mouseup", () =>
-      console.log(click ? "click" : "drag")
-    );
-
-    // Create a On-Mouseup Event-Handler
-    Events.on(mouseConstraint, "mouseup", function (event) {
-      var mouseConstraint = event.source;
-      var bodies = engine.world.bodies;
-      if (!mouseConstraint.bodyB) {
-        for (let i = 0; i < bodies.length; i++) {
-          var body = bodies[i];
-          // Check if clicked or dragged
-          if (click === true) {
-            if (Bounds.contains(body.bounds, mouseConstraint.mouse.position)) {
-              var bodyUrl = body.url;
-              console.log("Body.Url >> " + bodyUrl);
-              // Hyperlinking feature
-              if (bodyUrl != undefined) {
-                //window.location.href = bodyUrl;
-                window.open(bodyUrl, "_blank");
-                console.log("Hyperlink was opened");
-              }
-              break;
-            }
-          }
-        }
-      }
-    });
 
     // Lancez le rendu
     Render.run(render);
