@@ -4,15 +4,20 @@ import "./scrollingtext.scss";
 
 function ScrollingText({ content, direction }) {
   const [pos, setPos] = useState(-3000);
-  const handleScroll = () => {
-    direction === "left"
-      ? setPos(-3000 + window.scrollY)
-      : setPos(-3000 - window.scrollY);
-  };
 
   useEffect(() => {
+    const handleScroll = () => {
+      direction === "left"
+        ? setPos(-3000 + window.scrollY)
+        : setPos(-3000 - window.scrollY);
+    };
+
     window.addEventListener("scroll", handleScroll);
-  }, [pos]);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [direction]);
 
   return (
     <div className="scrollingtext-container">
