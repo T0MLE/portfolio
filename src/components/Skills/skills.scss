@@ -3,6 +3,8 @@ $First-font : myFirstFont;
 
 .skills-container {
     border-bottom: 1px solid $main-color;
+    overflow: hidden;
+    height: 60vh;
 
     h2 {
         font-size: 20vw;

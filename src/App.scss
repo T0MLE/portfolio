@@ -26,27 +26,6 @@ $First-font : myFirstFont;
     color: $main-color;
 }
 
-.hidden {
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  left: 0;
-  width: 4000px;
-  height: 0px;
-  background-color: $main-color;
-}
-
-.transition {
-  position: fixed;
-  z-index: 99;
-  bottom: 0;
-  left: 0;
-  width: 4000px;
-  height: 9000px;
-  background-color: $main-color;
-  transition: all 2s ease-in-out;
-}
-
 .RETICOOL {
   color: transparent !important;
   background-color: transparent !important;
@@ -120,3 +99,33 @@ html.has-scroll-dragging {
   [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
     right: auto;
     bottom: 0; }
+
+
+    #box {
+      position: absolute;
+      background: #111;
+      color: #eee;
+      height: 80px;
+      width: 140px;
+      cursor: move;
+      user-select: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "Amatic SC";
+      text-shadow: 2px 2px 3px #38e;
+    }
+    
+    #ground {
+      position: absolute;
+      background: #666;
+      top: 140px;
+      height: 120px;
+      width: 400px;
+    }
+    
+    html, body {
+      position: relative;
+      height: 100%;
+      margin: 0;
+    }
