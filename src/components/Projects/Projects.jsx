@@ -54,7 +54,10 @@ function Projects() {
                 Wild_Fitness_Club.png
               </div>
             </strong>
-            <div onClick={() => handleClick("/wildfitnessclub")}>
+            <div
+              className="projet-wrapper"
+              onClick={() => handleClick("/wildfitnessclub")}
+            >
               {" "}
               <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
             </div>
