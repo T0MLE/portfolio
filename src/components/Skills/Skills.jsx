@@ -7,7 +7,7 @@ import {
   Bodies,
   Render,
   Events,
-  Matter,
+  Bounds,
   Mouse,
   MouseConstraint,
   Runner,
@@ -209,12 +209,7 @@ function Skills() {
           var body = bodies[i];
           // Check if clicked or dragged
           if (click === true) {
-            if (
-              Matter.Bounds.contains(
-                body.bounds,
-                mouseConstraint.mouse.position
-              )
-            ) {
+            if (Bounds.contains(body.bounds, mouseConstraint.mouse.position)) {
               var bodyUrl = body.url;
               console.log("Body.Url >> " + bodyUrl);
               // Hyperlinking feature
