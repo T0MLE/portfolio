@@ -29,8 +29,8 @@ function Navbar() {
       <button
         ref={btnref}
         className="contact-btn"
-        onMouseMove={handleMouse}
-        onMouseLeave={handleMouseOut}
+        onMouseMove={window.innerWidth >= 1000 && handleMouse}
+        onMouseLeave={window.innerWidth >= 1000 && handleMouseOut}
       >
         Contact
       </button>

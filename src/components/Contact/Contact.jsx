@@ -23,20 +23,32 @@ function Contact() {
       <ScrollingText content={text2} direction="left" />
       <div id="contacts">
         <button
-          onMouseMove={(e) => handleMouse(e, e.currentTarget)}
-          onMouseLeave={(e) => handleMouseOut(e.currentTarget)}
+          onMouseMove={(e) =>
+            window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
+          }
+          onMouseLeave={(e) =>
+            window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
+          }
         >
           <a href="mailto:lelaurain.tom@gmail.com">lelaurain.tom@gmail.com</a>
         </button>
         <button
-          onMouseMove={(e) => handleMouse(e, e.currentTarget)}
-          onMouseLeave={(e) => handleMouseOut(e.currentTarget)}
+          onMouseMove={(e) =>
+            window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
+          }
+          onMouseLeave={(e) =>
+            window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
+          }
         >
           <a href="https://www.linkedin.com/in/tom-lelaurain/">Linkedin</a>
         </button>
         <button
-          onMouseMove={(e) => handleMouse(e, e.currentTarget)}
-          onMouseLeave={(e) => handleMouseOut(e.currentTarget)}
+          onMouseMove={(e) =>
+            window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
+          }
+          onMouseLeave={(e) =>
+            window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
+          }
         >
           <a href="https://github.com/T0MLE">Github</a>
         </button>
