@@ -1,16 +1,33 @@
 import PropTypes from "prop-types";
+import { useEffect, useState } from "react";
 import "./scrollingtext.scss";
 
 function ScrollingText({ content, direction }) {
+  const [pos, setPos] = useState(-3000);
+  const handleScroll = () => {
+    direction === "left"
+      ? setPos(-3000 + window.scrollY)
+      : setPos(-3000 - window.scrollY);
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+  }, [pos]);
+
   return (
     <div className="scrollingtext-container">
-      <div
-        data-scroll
-        data-scroll-speed={direction === "left" ? "8" : "-8"}
-        data-scroll-direction="horizontal"
-      >
-        {content}
-      </div>
+      {window.innerWidth <= 700 ? (
+        <div style={{ left: pos }}> {content}</div>
+      ) : (
+        <div
+          data-scroll
+          data-scroll-speed={direction === "left" ? "8" : "-8"}
+          data-scroll-direction="horizontal"
+        >
+          {" "}
+          {content}
+        </div>
+      )}
     </div>
   );
 }
