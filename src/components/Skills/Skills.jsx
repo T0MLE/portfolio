@@ -76,77 +76,77 @@ function Skills() {
     );
     const radius = 50;
     // Créez la div qui tombe
-    const html = Bodies.rectangle(230, 0, 300, 100, {
+    let html = Bodies.rectangle(500, 60, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imghtml, overflow: "hidden", radius: radius },
       },
     });
 
-    const css = Bodies.rectangle(130, 0, 300, 100, {
+    const css = Bodies.rectangle(600, 60, 330, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgcss, overflow: "hidden", radius: radius },
       },
     });
 
-    const js = Bodies.rectangle(430, 0, 300, 100, {
+    const js = Bodies.rectangle(400, 60, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgjs, overflow: "hidden", radius: radius },
       },
     });
 
-    const react = Bodies.rectangle(330, 0, 300, 100, {
+    const react = Bodies.rectangle(200, 200, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgreact, overflow: "hidden", radius: radius },
       },
     });
 
-    const node = Bodies.rectangle(330, 0, 300, 100, {
+    const node = Bodies.rectangle(500, 200, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgnode, overflow: "hidden", radius: radius },
       },
     });
 
-    const express = Bodies.rectangle(530, 0, 350, 100, {
+    const express = Bodies.rectangle(800, 60, 350, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgexpress, overflow: "hidden", radius: radius },
       },
     });
 
-    const git = Bodies.rectangle(230, 150, 300, 100, {
+    const git = Bodies.rectangle(230, 200, 330, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imggit, overflow: "hidden", radius: radius },
       },
     });
 
-    const figma = Bodies.rectangle(330, 150, 300, 100, {
+    const figma = Bodies.rectangle(1100, 200, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgfigma, overflow: "hidden", radius: radius },
       },
     });
 
-    const coffee = Bodies.rectangle(430, 150, 400, 100, {
+    const coffee = Bodies.rectangle(630, 100, 430, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgcoffee, overflow: "hidden", radius: radius },
       },
     });
 
-    const mysql = Bodies.rectangle(630, 150, 300, 100, {
+    const mysql = Bodies.rectangle(800, 200, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgmysql, overflow: "hidden", radius: radius },
       },
     });
 
-    const skills = Bodies.rectangle(530, 0, 300, 100, {
+    const skills = Bodies.rectangle(1100, 60, 300, 100, {
       chamfer: { radius: radius },
       render: {
         sprite: { texture: imgskills, overflow: "hidden", radius: radius },
