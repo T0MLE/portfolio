@@ -18,7 +18,7 @@ function App() {
       el: scrollRef.current,
       smooth: true,
       lerp: 0.1,
-      smartphone: {smooth: true},
+      smartphone: { smooth: true },
     });
 
     return () => {
