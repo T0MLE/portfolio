@@ -21,6 +21,8 @@ $background-color-1 : #F0EDE5;
     p {
         font-size: 1.3rem;
         font-family: mySecFont;
+        font-weight: bold;
+
 
     }
 
@@ -32,6 +34,8 @@ $background-color-1 : #F0EDE5;
         padding: 7px 14px 7px 14px;;
         background-color: $background-color-1;
         font-size: 1rem;
+        font-weight: bold;
+
         cursor: none;
         transition: transform 0.1s linear;
         &:hover {

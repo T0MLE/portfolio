@@ -118,62 +118,59 @@ function Projects() {
         </div>
       </Draggable>
     </div>
-  )
-    
-  
+  );
 
   const mobile = () => (
     <div className="projects-container-mobile">
-    <div
-      className="projet-wrapper"
-      onClick={() => handleClick("/wildfitnessclub")}
-    >
-      <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
-        <div className="dots">
-          {" "}
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
+      <div
+        className="projet-wrapper"
+        onClick={() => handleClick("/wildfitnessclub")}
+      >
+        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+          <div className="dots">
+            {" "}
+            <div className="dot" />
+            <div className="dot" />
+            <div className="dot" />
+          </div>
+          Wild_Fitness_Club.png
         </div>
-        Wild_Fitness_Club.png
+        <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
       </div>
-      <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
-    </div>
-    <div className="projet-wrapper" onClick={() => handleClick("/cvmario")}>
-      <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
-        <div className="dots">
-          {" "}
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
+      <div className="projet-wrapper" onClick={() => handleClick("/cvmario")}>
+        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+          <div className="dots">
+            {" "}
+            <div className="dot" />
+            <div className="dot" />
+            <div className="dot" />
+          </div>
+          CV_Mario.png
         </div>
-        Wild_Fitness_Club.png
+        <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
       </div>
-      <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
-    </div>
-    <div
-      className="projet-wrapper"
-      onClick={() => handleClick("/wondermatch")}
-    >
-      <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
-        <div className="dots">
-          {" "}
-          <div className="dot" />
-          <div className="dot" />
-          <div className="dot" />
+      <div
+        className="projet-wrapper"
+        onClick={() => handleClick("/wondermatch")}
+      >
+        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+          <div className="dots">
+            {" "}
+            <div className="dot" />
+            <div className="dot" />
+            <div className="dot" />
+          </div>
+          Wonder_Match.png
         </div>
-        Wild_Fitness_Club.png
+        <Project img={wonder} stack={["HTML", "CSS", "React"]} />
       </div>
-      <Project img={wonder} stack={["HTML", "CSS", "React"]} />
     </div>
-  </div>
-  )
-   
-  
+  );
+
   return (
     <>
       <ScrollingText content={text} direction="left" />
-      {window.innerWidth >= 701 ? desktop()  :  mobile() }
+      {window.innerWidth >= 701 ? desktop() : mobile()}
     </>
   );
 }

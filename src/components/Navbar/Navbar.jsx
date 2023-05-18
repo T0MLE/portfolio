@@ -3,14 +3,11 @@ import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
 
 function Navbar() {
-
   const navigate = useNavigate();
 
   const handleClickHome = () => {
     navigate("/");
   };
-
-
 
   const btnref = useRef();
 
@@ -28,7 +25,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <p onClick={handleClickHome}>home</p>
+      <p onClick={handleClickHome}>Home</p>
       <button
         ref={btnref}
         className="contact-btn"
