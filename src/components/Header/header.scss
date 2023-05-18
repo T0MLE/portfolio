@@ -7,6 +7,7 @@ $second-font : Josefin sans ;
 .header {
     padding: 0 40px;
     width: 100%;
+    height: 100vh;
     border-bottom: 1px solid $main-color;
     display: flex;
     flex-direction: column;
@@ -16,17 +17,36 @@ $second-font : Josefin sans ;
         margin-top: 140px;
         font-family: $First-font;
         font-size: 6rem;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: 6rem;
+
     }
-    h2 {
+    .word {
+        margin: 16px;
+    }
+    .char {
+        transform: translateY(150px);
+        transition: transform .5s;
+
+    }
+
+    h2{
+
         font-size: 5rem;
         font-family: $First-font;
         margin-bottom: 32px;
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+        line-height: 6rem;
     }
+
     p {
         text-align: center;
         font-size: 3rem;
         font-family: mySecFont;
         margin-bottom: 80px;
+        opacity: 0;
+        transition: all 1s ease-in-out;
+
     }
 
 }

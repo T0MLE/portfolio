@@ -9,12 +9,11 @@ function Cursor() {
     opacity: 1,
     ease: 0.5,
     content: null,
-    lockTriggers: "[data-lock], button",
+    lockTriggers: "none",
     lockExpand: 0,
   };
 
   new RETICOOL(config);
-
 }
 
 export default Cursor;

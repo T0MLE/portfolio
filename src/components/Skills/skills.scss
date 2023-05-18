@@ -1,0 +1,12 @@
+$main-color : #260F71;
+$First-font : myFirstFont;
+
+.skills-container {
+    border-bottom: 1px solid $main-color;
+
+    h2 {
+        font-size: 20vw;
+        line-height: 20vw;
+        font-family: myThirdFont;
+    }
+}

@@ -16,7 +16,8 @@
     "react-draggable": "^4.4.5",
     "react-router-dom": "^6.11.1",
     "reticool": "^1.2.1",
-    "sass": "^1.62.1"
+    "sass": "^1.62.1",
+    "split-type": "^0.3.3"
   },
   "devDependencies": {
     "@types/react": "^18.0.28",

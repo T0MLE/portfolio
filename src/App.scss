@@ -8,10 +8,14 @@ $First-font : myFirstFont;
     font-family: myFirstFont;
     src: url("./assets/font/AestheticRegular-Yzraq.otf");
   }
-  
+
 @font-face {
     font-family: mySecFont;
     src: url("./assets/font/magnat/magnat.otf");
+  }
+@font-face {
+    font-family: myThirdFont;
+    src: url("./assets/font/tusker.otf");
   }
 
 * {

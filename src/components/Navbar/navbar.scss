@@ -20,19 +20,20 @@ $background-color-1 : #F0EDE5;
     z-index: 9;
     p {
         font-size: 1.3rem;
-        font-family: $second-font;
+        font-family: mySecFont;
 
     }
 
     .contact-btn {
-        font-family: $second-font;
+        font-family: mySecFont;
         text-decoration: none;
         border: 1px solid $main-color;
         border-radius: 100px;
-        padding: 9px 14px 7px 14px;;
+        padding: 7px 14px 7px 14px;;
         background-color: $background-color-1;
         font-size: 1rem;
         cursor: none;
+        transition: transform 0.1s linear;
         &:hover {
             background-color: #f0EDFF;
         }
