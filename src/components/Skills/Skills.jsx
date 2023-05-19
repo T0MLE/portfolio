@@ -46,7 +46,7 @@ function Skills() {
 
     const ground = Bodies.rectangle(
       canvasRef.current.offsetWidth / 2 + 160,
-      canvasRef.current.offsetHeight + 60,
+      canvasRef.current.offsetHeight + 78,
       canvasRef.current.offsetWidth + 320,
       160,
       { render: { fillStyle: "transparent" }, isStatic: true }

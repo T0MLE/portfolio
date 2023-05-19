@@ -1,46 +1,7 @@
-// import "./skills.scss";
-
-// import imghtml from "../../assets/html.svg";
-// import imgcss from "../../assets/css.svg";
-// import imgjs from "../../assets/js.svg";
-// import imgreact from "../../assets/react.svg";
-// import imggit from "../../assets/git.svg";
-// import imgfigma from "../../assets/figma.svg";
-// import imgnode from "../../assets/node.svg";
-// import imgexpress from "../../assets/express.svg";
-// import imgcoffee from "../../assets/coffee.svg";
-// import imgmysql from "../../assets/mysql.svg";
-// import imgskills from "../../assets/skills.svg";
-
-// function SkillsMobile() {
-//   const skills = [
-//     imgskills,
-//     imghtml,
-//     imgcss,
-//     imgjs,
-//     imgreact,
-//     imggit,
-//     imgfigma,
-//     imgnode,
-//     imgexpress,
-//     imgcoffee,
-//     imgmysql,
-//   ];
-//   return (
-//     <div className="skills-container">
-//       {skills.map((e) => {
-//         return <img src={e} key={skills.indexOf(e)} />;
-//       })}
-//     </div>
-//   );
-// }
-
-// export default SkillsMobile;
-
 import "./skills.scss";
 
 import { useEffect, useRef } from "react";
-import { Engine, World, Bodies, Render, Runner } from "matter-js";
+import { Engine, World, Bodies, Render, Runner, Body } from "matter-js";
 
 import imghtml from "../../assets/html.svg";
 import imgcss from "../../assets/css.svg";
@@ -247,6 +208,19 @@ function SkillsMobile() {
         },
       },
     });
+
+    setTimeout(() => {
+      Body.setStatic(skills, { static: true });
+      Body.setStatic(html, { static: true });
+      Body.setStatic(css, { static: true });
+      Body.setStatic(js, { static: true });
+      Body.setStatic(node, { static: true });
+      Body.setStatic(express, { static: true });
+      Body.setStatic(git, { static: true });
+      Body.setStatic(figma, { static: true });
+      Body.setStatic(mysql, { static: true });
+      Body.setStatic(coffee, { static: true });
+    }, 3000);
 
     World.add(engine.world, [
       ground,
