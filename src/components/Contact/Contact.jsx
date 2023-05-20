@@ -22,36 +22,42 @@ function Contact() {
       <ScrollingText content={text1} direction="right" />
       <ScrollingText content={text2} direction="left" />
       <div id="contacts">
-        <button
-          onMouseMove={(e) =>
-            window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
-          }
-          onMouseLeave={(e) =>
-            window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
-          }
-        >
-          <a href="mailto:lelaurain.tom@gmail.com">lelaurain.tom@gmail.com</a>
-        </button>
-        <button
-          onMouseMove={(e) =>
-            window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
-          }
-          onMouseLeave={(e) =>
-            window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
-          }
-        >
-          <a href="https://www.linkedin.com/in/tom-lelaurain/">Linkedin</a>
-        </button>
-        <button
-          onMouseMove={(e) =>
-            window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
-          }
-          onMouseLeave={(e) =>
-            window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
-          }
-        >
-          <a href="https://github.com/T0MLE">Github</a>
-        </button>
+        <a href="mailto:lelaurain.tom@gmail.com">
+          <button
+            onMouseMove={(e) =>
+              window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
+            }
+            onMouseLeave={(e) =>
+              window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
+            }
+          >
+            lelaurain.tom@gmail.com
+          </button>
+        </a>
+        <a href="https://www.linkedin.com/in/tom-lelaurain/">
+          <button
+            onMouseMove={(e) =>
+              window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
+            }
+            onMouseLeave={(e) =>
+              window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
+            }
+          >
+            Linkedin
+          </button>
+        </a>
+        <a href="https://github.com/T0MLE">
+          <button
+            onMouseMove={(e) =>
+              window.innerWidth >= 1000 && handleMouse(e, e.currentTarget)
+            }
+            onMouseLeave={(e) =>
+              window.innerWidth >= 1000 && handleMouseOut(e.currentTarget)
+            }
+          >
+            Github
+          </button>
+        </a>
       </div>
     </div>
   );

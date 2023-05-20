@@ -11,13 +11,16 @@ $background-color-1 : #f7f6fa;
     overflow: hidden;
     font-size: 5rem;
     position: relative;
-    height: 200px;
+    height: 150px;
     border-bottom: 1px solid $main-color;
 
     div {
         position: absolute;
         left: -300px;
-        font-family: $First-font;
+        font-family: ClearfaceITCW01;
+        // font-family: myThirdFont;
+        // font-weight: 400;
+        // font-style: italic;
     }
   }
 

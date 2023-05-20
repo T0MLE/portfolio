@@ -1,12 +1,25 @@
-$background-color-1 : #F0EDE5;
+// $background-color-1 : #F0EDE5;
+$background-color-1 : #F9F6EB;
+// $background-color-1 : #F7F7FA;
+// $main-color : #260F71;
+
 $main-color : black;
 $First-font : myFirstFont;
+
+@font-face {font-family: ClearfaceITCW01; src: url("//db.onlinewebfonts.com/t/c7b207011231ae3c2a688d2bf8abc1df.svg#ClearfaceITCW01") format("svg"); }
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 
 
 @font-face {
     font-family: myFirstFont;
-    src: url("./assets/font/AestheticRegular-Yzraq.otf");
+    src: url("./assets/font/FoundersGroteskXCond-Bold.otf");
+    font-weight: bold;
+  }
+@font-face {
+    font-family: myFirstFont;
+    src: url("./assets/font/FoundersGrotesk-Regular.otf");
+    font-weight: normal;
   }
 
 @font-face {
@@ -15,20 +28,45 @@ $First-font : myFirstFont;
   }
 @font-face {
     font-family: myThirdFont;
-    src: url("./assets/font/tusker.otf");
+    src: url("./assets/font/MigraItalic-ExtralightItalic.woff2");
+    font-weight: 100;
+    font-style: italic;
+  }
+@font-face {
+    font-family: myThirdFont;
+    src: url("./assets/font/Migra-Extrabold.ttf");
+    font-weight: bold;
+  }
+@font-face {
+    font-family: myThirdFont;
+    src: url("./assets/font/Migra-Extralight.ttf");
+    font-weight: 100;
+    font-style: normal;
+  }
+@font-face {
+    font-family: myThirdFont;
+    src: url("./assets/font/MigraItalic-ExtraboldItalic.ttf");
+    font-weight: bold;
+    font-style: italic;
+
   }
 
 * {
     margin: 0;
     padding: 0;
-    background-color: $background-color-1;
     box-sizing: border-box;
     color: $main-color;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-    &::-webkit-scrollbar {
-      display: none;
-    }
+
+}
+
+body {
+  background-color: $background-color-1;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
 }
 
 .RETICOOL {
