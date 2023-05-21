@@ -12,7 +12,13 @@ import { useNavigate } from "react-router-dom";
 function Projects() {
   const text =
     "PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS *";
-  const [zIndex, setZIndex] = useState({ div1: 4, div2: 1, div3: 2, div4: 3 });
+  const [zIndex, setZIndex] = useState({
+    div1: 4,
+    div2: 1,
+    div3: 2,
+    div4: 3,
+    div5: 1,
+  });
 
   const handleDrag = (divID) => {
     setZIndex((prevState) => {
@@ -143,6 +149,35 @@ function Projects() {
           </div>
         </div>
       </Draggable>
+      <div className="passioncss">
+        <Draggable
+          handle="strong"
+          bounds=".draggable-container"
+          onDrag={() => handleDrag("div5")}
+        >
+          <div
+            className="project-card card5"
+            style={{ zIndex: `${zIndex["div4"]}` }}
+          >
+            <strong>
+              <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+                <div className="dots">
+                  {" "}
+                  <div className="dot" />
+                  <div className="dot" />
+                  <div className="dot" />
+                </div>
+                Passion.png
+              </div>
+            </strong>
+            <div className="imgpassion">
+              <span>CSS IS</span>
+              <span>MY PASS</span>
+            </div>
+          </div>
+        </Draggable>
+        <div className="text-overflow">ION</div>
+      </div>
     </div>
   );
 
