@@ -6,12 +6,13 @@ import "./projects.scss";
 import WFC from "../../assets/WFC.png";
 import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
+import portfolio from "../../assets/portfolio.png";
 import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const text =
     "PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS *";
-  const [zIndex, setZIndex] = useState({ div1: 3, div2: 2, div3: 1 });
+  const [zIndex, setZIndex] = useState({ div1: 4, div2: 1, div3: 2, div4: 3 });
 
   const handleDrag = (divID) => {
     setZIndex((prevState) => {
@@ -42,7 +43,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div1"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -71,7 +72,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div2"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#fffbe0" }}>
+            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -99,7 +100,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div3"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#F8EAFF" }}>
+            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -114,6 +115,31 @@ function Projects() {
             onClick={() => handleClick("/wondermatch")}
           >
             <Project img={wonder} stack={["HTML", "CSS", "React"]} />
+          </div>
+        </div>
+      </Draggable>
+      <Draggable
+        handle="strong"
+        bounds="parent"
+        onDrag={() => handleDrag("div4")}
+      >
+        <div
+          className="project-card card4"
+          style={{ zIndex: `${zIndex["div4"]}` }}
+        >
+          <strong>
+            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+              <div className="dots">
+                {" "}
+                <div className="dot" />
+                <div className="dot" />
+                <div className="dot" />
+              </div>
+              Mon_incroyable_portfolio.png
+            </div>
+          </strong>
+          <div className="projet-wrapper">
+            <Project img={portfolio} stack={["HTML", "SCSS", "React"]} />
           </div>
         </div>
       </Draggable>
@@ -163,6 +189,18 @@ function Projects() {
           Wonder_Match.png
         </div>
         <Project img={wonder} stack={["HTML", "CSS", "React"]} />
+      </div>
+      <div className="projet-wrapper">
+        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+          <div className="dots">
+            {" "}
+            <div className="dot" />
+            <div className="dot" />
+            <div className="dot" />
+          </div>
+          Mon_incroyable_portfolio.png
+        </div>
+        <Project img={portfolio} stack={["HTML", "SCSS", "React"]} />
       </div>
     </div>
   );

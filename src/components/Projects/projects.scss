@@ -8,7 +8,7 @@ $background-color-1 : #F9F6EB;
 
 .draggable-container {
     width: 100%;
-    height: calc(100vh - 150px);
+    height: 70vw;
     position: relative;
     padding: 16px;
     border-bottom: 1px solid $main-color;
@@ -33,13 +33,19 @@ $background-color-1 : #F9F6EB;
         }
         .card2 {
             position: absolute;
-            top: 100px;
-            left: 30%;
+            top: 50px;
+            right: 5%;
         }
         .card3 {
             position: absolute;
-            top: 150px;
-            left: 55%;
+            top: 20%;
+            left: calc(50% - 15vw);
+            
+        }
+        .card4 {
+            position: absolute;
+            top: 50%;
+            left: 5%;
         }
 
     strong {

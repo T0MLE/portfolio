@@ -25,7 +25,7 @@ function Navbar() {
 
   return (
     <div className="navbar">
-      <p onClick={handleClickHome}>Home</p>
+      <p onClick={handleClickHome}>Tom Le Laurain</p>
       <button
         ref={btnref}
         className="contact-btn"

@@ -18,60 +18,63 @@ function Header() {
 
   return (
     <div className="header">
-        <h2 className="my-text">
-          <span className="word">
-            {" "}
-            <span className="char">F</span>
-            <span className="char">U</span>
-            <span className="char">L</span>
-            <span className="char">L</span>
-            <span className="char">S</span>
-            <span className="char">T</span>
-            <span className="char">A</span>
-            <span className="char">C</span>
-            <span className="char">K</span>
-          </span>
-          <span className="word">
-            {" "}
-            <span className="char">D</span>
-            <span className="char">E</span>
-            <span className="char">V</span>
-            <span className="char">E</span>
-            <span className="char">L</span>
-            <span className="char">O</span>
-            <span className="char">P</span>
-            <span className="char">E</span>
-            <span className="char">R</span>
-          </span>
-        </h2>
-        <h1 className="my-text">
-          <span className="word">
-            {" "}
-            <span className="char">T</span>
-            <span className="char">O</span>
-            <span className="char">M</span>
-          </span>
-          <span className="word">
-            {" "}
-            <span className="char">L</span>
-            <span className="char">E</span>
-          </span>
-          <span className="word">
-            {" "}
-            <span className="char">L</span>
-            <span className="char">A</span>
-            <span className="char">U</span>
-            <span className="char">R</span>
-            <span className="char">A</span>
-            <span className="char">I</span>
-            <span className="char">N</span>
-          </span>
-        </h1>
-        <p id="desc">
+      <h2 className="my-text">
+        <span className="word">
           {" "}
-          Currently pursuing a web developement program, I am looking
-          for an apprenticeship opportunity starting in September 2023.
-        </p>
+          <span className="char">D</span>
+          <span className="char">É</span>
+          <span className="char">V</span>
+          <span className="char">E</span>
+          <span className="char">L</span>
+          <span className="char">O</span>
+          <span className="char">P</span>
+          <span className="char">P</span>
+          <span className="char">E</span>
+          <span className="char">U</span>
+          <span className="char">R</span>
+        </span>
+        <span className="word">
+          {" "}
+          <span className="char">F</span>
+          <span className="char">U</span>
+          <span className="char">L</span>
+          <span className="char">L</span>
+          <span className="char">S</span>
+          <span className="char">T</span>
+          <span className="char">A</span>
+          <span className="char">C</span>
+          <span className="char">K</span>
+        </span>
+      </h2>
+      <h1 className="my-text">
+        <span className="word">
+          {" "}
+          <span className="char">T</span>
+          <span className="char">O</span>
+          <span className="char">M</span>
+        </span>
+        <span className="word">
+          {" "}
+          <span className="char">L</span>
+          <span className="char">E</span>
+        </span>
+        <span className="word">
+          {" "}
+          <span className="char">L</span>
+          <span className="char">A</span>
+          <span className="char">U</span>
+          <span className="char">R</span>
+          <span className="char">A</span>
+          <span className="char">I</span>
+          <span className="char">N</span>
+        </span>
+      </h1>
+      <p id="desc">
+        {" "}
+        Actuellement en formation pour devenir développeur web Fullstack, je
+        recherche une alternance à partir
+        de Septembre 2023.
+      </p>
     </div>
   );
 }

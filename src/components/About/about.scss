@@ -1,0 +1,97 @@
+$main-color : black;
+
+
+.about-container {
+    width: 100%;
+    border-bottom: 1px solid $main-color;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    .about {
+        padding: 40px;
+        width: 50%;
+        font-family: ClearFaceITCW01;
+        font-size: 1.5vw;
+        text-align: justify;
+        border-right: 1px solid black;
+    }
+    .skills-title {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        padding: 16px 40px;
+        h2 {
+            font-family: myThirdFont;
+            font-weight: bold;
+            font-size: 1.5vw;
+            margin-bottom: 16px;
+        }
+        .skills {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        .skill {
+            border: 1px solid black;
+            border-radius: 100px;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 8px 16px;
+            width:fit-content;
+            margin : 4px 8px 4px 0;
+            img {
+                width: 30px;
+                height: 30px;
+                margin-right: 16px;
+                // filter: brightness(0) saturate(100%) invert(40%) sepia(14%) saturate(1864%) hue-rotate(189deg) brightness(96%) contrast(92%);
+                // filter:brightness(0) saturate(100%) invert(38%) sepia(54%) saturate(4466%) hue-rotate(348deg) brightness(100%) contrast(87%);
+                }
+            span {
+                font-family: ClearFaceITCW01;
+                font-size: 1.5vw;
+    
+    
+            }
+        }
+        }
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+        .about {
+            border-right: none;
+            width: 100%;
+            font-size: 1rem;
+            padding: 16px;
+        }
+        .skills-title {
+            width: 100%;
+            padding: 16px;
+            h2 {
+                font-size: 1rem;
+            }
+            .skills {
+                justify-content: center;
+                .skill {
+                    padding: 8px 16px;
+                    width:fit-content;
+                    margin : 4px 8px 4px 0;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                        margin-right: 16px;
+                        }
+                    span {
+                        font-size: 1rem;
+                    }
+            }
+        }
+    }
+
+}}
