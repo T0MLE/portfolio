@@ -1,23 +1,24 @@
+$background-color-1 : #F9F6EB;
+
+
 #contacts {
-    height: 600px;
+    height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+
     a {
         cursor: none;
         border-radius: 100px;
         background-color: transparent;
         text-decoration: none;
         margin: 16px;
-
-
-        // font-family: mySecFont;
-
         button {
             font-size: 54px;
             font-family : ClearfaceITCW01;
-            background-color: transparent;
+            background-color: $background-color-1;
+            border: none;
             border: 1px solid black;
             border-radius: 100px;
             padding: 7px 20px 7px 20px;
@@ -38,19 +39,19 @@
 @media screen and (max-width: 700px) {
     #contacts {
         height: 300px;
-        button {
-            border-radius: 100px;
-            a {
-                padding: 8px;
-
-                cursor: none;
-                margin: 16px;
+        a {
+            padding: 8px;
+            margin: 8px;
+            cursor: none;
+            button {
+                border-radius: 100px;
+                font-family : ClearfaceITCW01;
                 font-size: 24px;
-                font-family: mySecFont;
-                font-weight: bold;
-
+    
             }
+
         }
+
     
     }
 }

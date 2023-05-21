@@ -1,6 +1,6 @@
 $First-font : myFirstFont;
 $main-color : #260F71;
-$background-color-1 : #f7f6fa;
+$background-color-1 : #F9F6EB;
 
 
 
@@ -12,15 +12,15 @@ $background-color-1 : #f7f6fa;
     font-size: 5rem;
     position: relative;
     height: 150px;
-    border-bottom: 1px solid $main-color;
+    border-bottom: 1px solid black;
+
+
 
     div {
         position: absolute;
-        left: -300px;
+        left: -1000px;
         font-family: ClearfaceITCW01;
-        // font-family: myThirdFont;
-        // font-weight: 400;
-        // font-style: italic;
+        
     }
   }
 

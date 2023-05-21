@@ -85,7 +85,7 @@ function Projects() {
             className="projet-wrapper"
             onClick={() => handleClick("/cvmario")}
           >
-            <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
+            <Project img={mario} stack={["HTML", "CSS", "JavaScript"]} />
           </div>
         </div>
       </Draggable>
