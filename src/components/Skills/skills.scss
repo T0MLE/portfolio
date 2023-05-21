@@ -1,33 +1,37 @@
 $background-color-1 : #F9F6EB;
 
+$main-color : black;
+$First-font : myFirstFont;
 
 .skills-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border-bottom: 1px solid black;
-    padding: 24px 0;
-    ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        &:nth-child(even) {
-            align-self: flex-end;
-            margin-right: 7vw;
-        }
-        &:nth-child(odd) {
-            align-self: flex-start;
-            margin-left: 7vw;
-        }
-        li {
-            border: 1px solid black;
-            list-style: none;
-            font-family: ClearFaceITCW01;
-            font-size: 3vw;
-            padding: 4px 24px;
-            border-radius: 50px;
-            white-space: nowrap;
-            margin: 4px 8px ;
-        }
+    border-bottom: 1px solid $main-color;
+    overflow: hidden;
+    height: 500px;
+    img {
+        height: 64px;
     }
+}
+
+@media screen and (max-width: 700px) {
+    .skills-container {
+        height: 450px;
+
+        padding: 8px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 64px);
+        justify-items: start;
+        align-content: flex-end;
+
+
+        img {
+            height: 64px;
+            width: 100%;
+            &:first-of-type {
+                width: initial;
+                grid-area: 1 / 1 / 2 / 3; 
+            }
+        }
+
+}
 }
