@@ -26,7 +26,7 @@ function About() {
   ];
 
   const about =
-    "Bonjour, je suis Tom (comme vous l'avez probablement deviné grâce à l'énorme en-tête). Il y a quelques années, pendant mes études de linguistique, j'ai découvert ma passion pour le développement web. Aujourd'hui, je travaille activement à concrétiser cette passion en suivant une formation de développement web fullstack. Dans cette optique, je suis à la recherche d'une alternance en contrat d'apprentissage pour un poste de développeur frontend ou fullstack à partir de septembre 2023. N'hésitez pas à explorer mon portfolio pour en savoir plus sur mon parcours et mes réalisations";
+    "Bonjour, je suis Tom (comme vous l'avez probablement deviné grâce à l'énorme en-tête). Il y a quelques années, pendant mes études de linguistique, j'ai découvert ma passion pour le développement web. Aujourd'hui, j'essaie de concrétiser cette passion en suivant une formation de développement web fullstack. Dans cette optique, je suis à la recherche d'une alternance en contrat d'apprentissage pour un poste de développeur frontend ou fullstack à partir de septembre 2023. N'hésitez pas à explorer mon portfolio pour en savoir plus sur mon parcours et mes réalisations.";
 
   return (
     <div className="about-container">

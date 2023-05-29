@@ -1,5 +1,6 @@
 // $background-color-1 : #F0EDE5;
-$background-color-1 : #F9F6EB;
+// $background-color-1 : #F9F6EB;
+$background-color-1 : #F6F5F1;
 // $background-color-1 : #F7F7FA;
 // $main-color : #260F71;
 
@@ -151,3 +152,19 @@ html.has-scroll-dragging {
   [data-scroll-direction="horizontal"] .c-scrollbar_thumb {
     right: auto;
     bottom: 0; }
+
+    .transition {
+      width: 100vw;
+      height: 0;
+      position: fixed;
+      top: 0;
+      z-index: 999;
+      background-color: blue;
+      transition: all 1s ease-in-out;
+    }
+
+    .transition-page {
+      height: 100vh;
+      transition: all 1s ease-in-out;
+
+    }

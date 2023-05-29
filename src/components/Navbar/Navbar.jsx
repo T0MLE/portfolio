@@ -26,14 +26,16 @@ function Navbar() {
   return (
     <div className="navbar">
       <p onClick={handleClickHome}>Tom Le Laurain</p>
-      <button
-        ref={btnref}
-        className="contact-btn"
-        onMouseMove={window.innerWidth >= 1000 && handleMouse}
-        onMouseLeave={window.innerWidth >= 1000 && handleMouseOut}
-      >
-        Contact
-      </button>
+      <a href="mailto:lelaurain.tom@gmail.com">
+        <button
+          ref={btnref}
+          className="contact-btn"
+          onMouseMove={window.innerWidth >= 1000 && handleMouse}
+          onMouseLeave={window.innerWidth >= 1000 && handleMouseOut}
+        >
+          Contact
+        </button>
+      </a>
     </div>
   );
 }

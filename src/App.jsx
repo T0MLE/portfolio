@@ -28,8 +28,8 @@ function App() {
 
   return (
     <div className="App">
-      <Cursor />
       <Navbar />
+      <Cursor />
       <div ref={scrollRef}>
         <Routes>
           <Route path="/" element={<Home />} />

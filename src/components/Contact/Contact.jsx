@@ -1,5 +1,6 @@
 import ScrollingText from "../ScrollingText/ScrollingText";
 import "./contact.scss";
+import shy from "../../assets/shy.svg";
 
 function Contact() {
   const handleMouse = (e, element) => {
@@ -22,6 +23,9 @@ function Contact() {
       <ScrollingText content={text1} direction="right" />
       <ScrollingText content={text2} direction="left" />
       <div id="contacts">
+        <div className="shy-container">
+          <img src={shy} alt="" />
+        </div>
         <a href="mailto:lelaurain.tom@gmail.com">
           <button
             onMouseMove={(e) =>

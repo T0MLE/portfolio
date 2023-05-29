@@ -1,12 +1,28 @@
-$background-color-1 : #F9F6EB;
+// $background-color-1 : #F9F6EB;
+$background-color-1 : #F6F5F1;
+
 
 
 #contacts {
+    position: relative;
     height: 400px;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    .shy-container {
+        position: absolute;
+        left: 10%;
+        top: 0;
+        height: 125px;
+        width: 125px;
+        overflow: hidden;
+        img {
+            height: 125px;
+            width: 375px;
+            animation: move .3s steps(3) infinite;
+        }
+    }
 
     a {
         cursor: none;
@@ -39,6 +55,9 @@ $background-color-1 : #F9F6EB;
 @media screen and (max-width: 700px) {
     #contacts {
         height: 300px;
+        .shy-container {
+            display: none;
+        }
         a {
             padding: 8px;
             margin: 8px;
@@ -54,4 +73,15 @@ $background-color-1 : #F9F6EB;
 
     
     }
+}
+
+@keyframes move {
+
+0% {
+    transform: translateX(0);
+}
+
+100% {
+    transform: translateX(-375px);
+}
 }

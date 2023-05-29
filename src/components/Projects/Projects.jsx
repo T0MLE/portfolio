@@ -7,7 +7,6 @@ import WFC from "../../assets/WFC.png";
 import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
 import portfolio from "../../assets/portfolio.png";
-import { useNavigate } from "react-router-dom";
 
 function Projects() {
   const text =
@@ -31,12 +30,6 @@ function Projects() {
     });
   };
 
-  const navigate = useNavigate();
-
-  const handleClick = (route) => {
-    navigate(route);
-  };
-
   const desktop = () => (
     <div className="draggable-container">
       <Draggable
@@ -49,7 +42,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div1"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+            <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -59,12 +52,16 @@ function Projects() {
               Wild_Fitness_Club.png
             </div>
           </strong>
-          <div
-            className="projet-wrapper"
-            onClick={() => handleClick("/wildfitnessclub")}
-          >
+          <div className="projet-wrapper">
             {" "}
-            <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
+            <Project
+              img={WFC}
+              stack={["HTML", "SCSS", "React"]}
+              github={"https://github.com/T0MLE/WCS-Projet2"}
+              website={
+                "https://6474c943c137bd1c26d896a7--wonderful-meerkat-5de761.netlify.app/"
+              }
+            />
           </div>
         </div>
       </Draggable>
@@ -78,7 +75,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div2"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+            <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -88,11 +85,13 @@ function Projects() {
               CV_MARIO.png
             </div>
           </strong>
-          <div
-            className="projet-wrapper"
-            onClick={() => handleClick("/cvmario")}
-          >
-            <Project img={mario} stack={["HTML", "CSS", "JavaScript"]} />
+          <div className="projet-wrapper">
+            <Project
+              img={mario}
+              stack={["HTML", "CSS", "JavaScript"]}
+              github={"https://github.com/T0MLE/WCS-project1"}
+              website={"https://t0mle.github.io/WCS-project1/"}
+            />
           </div>
         </div>
       </Draggable>
@@ -106,7 +105,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div3"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+            <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -116,11 +115,12 @@ function Projects() {
               Wonder_Match.png
             </div>
           </strong>
-          <div
-            className="projet-wrapper"
-            onClick={() => handleClick("/wondermatch")}
-          >
-            <Project img={wonder} stack={["HTML", "CSS", "React"]} />
+          <div className="projet-wrapper">
+            <Project
+              img={wonder}
+              stack={["HTML", "CSS", "React"]}
+              github={"https://github.com/T0MLE/Hackaton-1"}
+            />
           </div>
         </div>
       </Draggable>
@@ -134,7 +134,7 @@ function Projects() {
           style={{ zIndex: `${zIndex["div4"]}` }}
         >
           <strong>
-            <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+            <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
               <div className="dots">
                 {" "}
                 <div className="dot" />
@@ -145,7 +145,11 @@ function Projects() {
             </div>
           </strong>
           <div className="projet-wrapper">
-            <Project img={portfolio} stack={["HTML", "SCSS", "React"]} />
+            <Project
+              img={portfolio}
+              stack={["HTML", "SCSS", "React"]}
+              github={"https://github.com/T0MLE/portfolio"}
+            />
           </div>
         </div>
       </Draggable>
@@ -160,7 +164,7 @@ function Projects() {
             style={{ zIndex: `${zIndex["div4"]}` }}
           >
             <strong>
-              <div className="handle" style={{ backgroundColor: "#F9F6EB" }}>
+              <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
                 <div className="dots">
                   {" "}
                   <div className="dot" />
@@ -183,11 +187,8 @@ function Projects() {
 
   const mobile = () => (
     <div className="projects-container-mobile">
-      <div
-        className="projet-wrapper"
-        onClick={() => handleClick("/wildfitnessclub")}
-      >
-        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+      <div className="projet-wrapper">
+        <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
           <div className="dots">
             {" "}
             <div className="dot" />
@@ -198,8 +199,8 @@ function Projects() {
         </div>
         <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
       </div>
-      <div className="projet-wrapper" onClick={() => handleClick("/cvmario")}>
-        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+      <div className="projet-wrapper">
+        <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
           <div className="dots">
             {" "}
             <div className="dot" />
@@ -210,11 +211,8 @@ function Projects() {
         </div>
         <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
       </div>
-      <div
-        className="projet-wrapper"
-        onClick={() => handleClick("/wondermatch")}
-      >
-        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+      <div className="projet-wrapper">
+        <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
           <div className="dots">
             {" "}
             <div className="dot" />
@@ -226,7 +224,7 @@ function Projects() {
         <Project img={wonder} stack={["HTML", "CSS", "React"]} />
       </div>
       <div className="projet-wrapper">
-        <div className="handle" style={{ backgroundColor: "#EBFDF8" }}>
+        <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
           <div className="dots">
             {" "}
             <div className="dot" />

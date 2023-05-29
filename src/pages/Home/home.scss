@@ -1,14 +1,13 @@
-$main-color : #260F71;
+$main-color : black;
 
 
 .home-container {
-    // width: 100%;
-    width: calc(100% - 180px);
+    width: 100%;
+    // width: calc(100% - 180px);
     margin : auto;
     border-left: 1px solid $main-color;
     border-right: 1px solid $main-color;
 }
-
 
 @media screen and (max-width: 700px) {
     .home-container {
