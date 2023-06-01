@@ -1,0 +1,113 @@
+.WM {
+    .cards-container {
+        display: flex;
+        flex-direction: column;
+        width: 99%;
+        height: 550vh;
+        margin: 0 auto;
+        .image-container {
+            // background-color: #009563;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            height: 70vh;
+            width: 100%;
+            margin-top: 10vh;
+            // border: 1px solid black;
+            // border-top: 1px solid black;
+            // border-left: 1px solid black;
+            // border-right: 1px solid black;
+            border-radius: 40px;
+            position: sticky;
+            // top: 58px;
+            background-color: #F6F5F1 ;
+            box-shadow: 0 2px 40px rgba(0, 0, 0, 0.1);
+
+
+
+            img {
+                height: 80%;
+                width: fit-content;
+                border-radius: 16px;
+                margin-bottom: 24px;
+            }
+            p {
+                width: 50%;
+                font-size: 2rem;
+               font-family: ClearfaceITCW01;
+               color: #009563;
+            }
+        }
+        .img1 {
+            top: 100px;
+        }
+        .img2 {
+            top: 120px;
+        }
+        .img3 {
+            top: 140px;
+        }
+        .img4 {
+            top: 160px;
+        }
+        .img5 {
+            top: 180px;
+        }
+        .img6 {
+            top: 200px;
+            justify-content: center;
+            video {
+                height: 90%;
+                border-radius: 16px;
+                margin-right: 20%;
+            }
+            a {
+                border-radius: 40px;
+                background-color: #009563;
+                text-decoration: none;
+                color: #F6F5F1;
+                padding: 16px;
+            }
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 700px) {
+    .WM {
+
+    .cards-container {
+
+        .image-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            padding: 16px;
+            height: 75vh;
+
+
+            img {
+                height: 70%;
+            }
+            p {
+                font-size: 1rem;
+                width: 100%;
+            }
+        }
+        .img6 {
+            video {
+                height: 80%;
+                border-radius: 16px;
+                margin-right: 0;
+                margin-bottom: 24px;
+
+            }
+
+        }
+    }
+}
+
+
+}

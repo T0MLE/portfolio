@@ -1,6 +1,8 @@
 import ScrollingText from "../ScrollingText/ScrollingText";
 import "./contact.scss";
 import shy from "../../assets/shy.svg";
+import star from '../../assets/star-symbol.png'
+
 
 function Contact() {
   const handleMouse = (e, element) => {
@@ -15,9 +17,9 @@ function Contact() {
   };
 
   const text1 =
-    "WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * WORK TOGETHER * ";
+    <>WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> </>
   const text2 =
-    "GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * GET IN TOUCH * ";
+  <>GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/></>
   return (
     <div>
       <ScrollingText content={text1} direction="right" />

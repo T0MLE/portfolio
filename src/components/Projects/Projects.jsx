@@ -7,10 +7,24 @@ import WFC from "../../assets/WFC.png";
 import mario from "../../assets/mario.png";
 import wonder from "../../assets/wondermatch.png";
 import portfolio from "../../assets/portfolio.png";
+import star from "../../assets/star-symbol.png";
 
 function Projects() {
-  const text =
-    "PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS * PROJECTS *";
+  const text = (
+    <>
+      {" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
+      PROJECTS
+    </>
+  );
   const [zIndex, setZIndex] = useState({
     div1: 4,
     div2: 1,
@@ -58,9 +72,7 @@ function Projects() {
               img={WFC}
               stack={["HTML", "SCSS", "React"]}
               github={"https://github.com/T0MLE/WCS-Projet2"}
-              website={
-                "https://6474c943c137bd1c26d896a7--wonderful-meerkat-5de761.netlify.app/"
-              }
+              website={"https://wildfitnessclub.netlify.app/"}
             />
           </div>
         </div>
@@ -120,6 +132,7 @@ function Projects() {
               img={wonder}
               stack={["HTML", "CSS", "React"]}
               github={"https://github.com/T0MLE/Hackaton-1"}
+              route={"/wondermatch"}
             />
           </div>
         </div>

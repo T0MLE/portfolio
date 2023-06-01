@@ -1,12 +1,26 @@
 import "./navbar.scss";
 import { useNavigate } from "react-router-dom";
 import { useRef } from "react";
+import { useContext } from "react";
+import TransitionContext from "../../context/Transition";
 
 function Navbar() {
   const navigate = useNavigate();
 
+  const { setTransition } = useContext(TransitionContext);
+
   const handleClickHome = () => {
-    navigate("/");
+    if (window.location.pathname === "/") {
+      navigate("/");
+    } else {
+      setTransition(true);
+      setTimeout(function () {
+        navigate("/");
+      }, 500);
+      setTimeout(function () {
+        setTransition(false);
+      }, 1000);
+    }
   };
 
   const btnref = useRef();

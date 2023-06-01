@@ -5,8 +5,8 @@ $main-color : black;
     width: 100%;
     // width: calc(100% - 180px);
     margin : auto;
-    border-left: 1px solid $main-color;
-    border-right: 1px solid $main-color;
+    // border-left: 1px solid $main-color;
+    // border-right: 1px solid $main-color;
 }
 
 @media screen and (max-width: 700px) {

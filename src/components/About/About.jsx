@@ -11,7 +11,6 @@ import git from "../../assets/git.svg";
 import coffee from "../../assets/coffee.svg";
 
 function About() {
-
   const skills = [
     { title: "HTML", img: html },
     { title: "CSS", img: css },

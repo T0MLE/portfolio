@@ -1,14 +1,27 @@
 import "./project.scss";
+import { useContext } from "react";
+import TransitionContext from "../../context/Transition";
 import PropTypes from "prop-types";
 import StackBtn from "../StackBtn/StackBtn";
 import arrow from "../../assets/arrow-link.png";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
-function Project({ img, stack, github, website }) {
-  // const navigate = useNavigate();
+function Project({ img, stack, github, website, route }) {
+  const { setTransition } = useContext(TransitionContext);
+  const navigate = useNavigate();
 
   const handleClick = () => {
-    website && window.open(website, "_blank");
+    website ? window.open(website, "_blank") : handleTransition();
+  };
+
+  const handleTransition = () => {
+    setTransition(true);
+    setTimeout(function () {
+      navigate(route);
+    }, 500);
+    setTimeout(function () {
+      setTransition(false);
+    }, 1000);
   };
 
   return (
