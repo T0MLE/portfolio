@@ -20,7 +20,7 @@ function Navbar() {
       }, 500);
       setTimeout(function () {
         setTransition(false);
-      }, 700);
+      }, 1000);
     }
   };
 
