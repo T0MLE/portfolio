@@ -3,10 +3,8 @@ import "./App.scss";
 import Cursor from "./components/cursor";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
-import { useContext} from "react";
-import WFC from "./pages/WFC/WFC";
+import { useContext } from "react";
 import WonderMatch from "./pages/WonderMatch/WonderMatch";
-import Mario from "./pages/Mario/Mario";
 import TransitionContext from "./context/Transition";
 
 function App() {
@@ -23,8 +21,6 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/wildfitnessclub" element={<WFC />} />
-          <Route path="/cvmario" element={<Mario />} />
           <Route path="/wondermatch" element={<WonderMatch />} />
         </Routes>
       </div>
