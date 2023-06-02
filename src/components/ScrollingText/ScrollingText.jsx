@@ -40,6 +40,6 @@ function ScrollingText({ content, direction }) {
 export default ScrollingText;
 
 ScrollingText.propTypes = {
-  content: PropTypes.string.isRequired,
+  content: PropTypes.object,
   direction: PropTypes.string.isRequired,
 };

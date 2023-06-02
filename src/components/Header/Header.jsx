@@ -119,6 +119,11 @@ function Header() {
       duration: 0.1,
       opacity: 1,
     });
+    gsap.to("#lang", {
+      delay: 0.5,
+      duration: 0.1,
+      opacity: 1,
+    });
   }, [language]);
 
   useEffect(() => {

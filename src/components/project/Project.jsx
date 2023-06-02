@@ -6,12 +6,12 @@ import StackBtn from "../StackBtn/StackBtn";
 import arrow from "../../assets/arrow-link.png";
 import { useNavigate } from "react-router-dom";
 
-function Project({ img, stack, github, website, route, key }) {
+function Project({ img, stack, github, website, route, id }) {
   const { setTransition } = useContext(TransitionContext);
   const navigate = useNavigate();
 
   const handleClick = () => {
-    if (key !== 4) {
+    if (id !== 4) {
       website ? window.open(website, "_blank") : handleTransition();
     }
   };
@@ -53,6 +53,6 @@ Project.propTypes = {
   github: PropTypes.string,
   route: PropTypes.string,
   website: PropTypes.string,
-  key: PropTypes.int,
+  id: PropTypes.number,
   stack: PropTypes.arrayOf(PropTypes.string),
 };

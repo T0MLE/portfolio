@@ -85,6 +85,10 @@ $second-font : Josefin sans ;
         transition: all 0.5s ease-in-out;
 
     }
+    #lang {
+       display: none;
+
+    }
 
 }
 
@@ -113,9 +117,16 @@ $second-font : Josefin sans ;
             font-style: normal;    
         }
         #lang {
+            display: initial;
             position: absolute;
             bottom: 3vh;
             font-size: 1.3rem;
+            opacity: 0;
+            transition: all 0.1s ease-in-out;
+
+
+
+
 
         }
     }

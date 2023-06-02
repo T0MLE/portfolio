@@ -184,7 +184,7 @@ function Projects() {
               img={portfolio}
               stack={["HTML", "SCSS", "React"]}
               github={"https://github.com/T0MLE/portfolio"}
-              key={4}
+              id={4}
             />
           </div>
         </div>
