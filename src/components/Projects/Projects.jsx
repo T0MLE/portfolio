@@ -233,7 +233,11 @@ function Projects() {
           </div>
           Wild_Fitness_Club.png
         </div>
-        <Project img={WFC} stack={["HTML", "SCSS", "React"]} />
+        <Project
+          img={WFC}
+          stack={["HTML", "SCSS", "React"]}
+          github={"https://github.com/T0MLE/WCS-Projet2"}
+        />
       </div>
       <div className="projet-wrapper">
         <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
@@ -245,7 +249,11 @@ function Projects() {
           </div>
           CV_Mario.png
         </div>
-        <Project img={mario} stack={["HTML", "CSS", "Vanilla JS"]} />
+        <Project
+          img={mario}
+          stack={["HTML", "CSS", "Vanilla JS"]}
+          github={"https://github.com/T0MLE/WCS-project1"}
+        />
       </div>
       <div className="projet-wrapper">
         <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
@@ -261,6 +269,7 @@ function Projects() {
           img={wonder}
           stack={["HTML", "CSS", "React"]}
           route={"/wondermatch"}
+          github={"https://github.com/T0MLE/Hackaton-1"}
         />
       </div>
       <div className="projet-wrapper">
@@ -273,7 +282,11 @@ function Projects() {
           </div>
           Mon_incroyable_portfolio.png
         </div>
-        <Project img={portfolio} stack={["HTML", "SCSS", "React"]} />
+        <Project
+          img={portfolio}
+          stack={["HTML", "SCSS", "React"]}
+          github={"https://github.com/T0MLE/portfolio"}
+        />
       </div>
     </div>
   );
