@@ -251,7 +251,7 @@ function Projects() {
         </div>
         <Project
           img={mario}
-          stack={["HTML", "CSS", "Vanilla JS"]}
+          stack={["HTML", "CSS", "JS"]}
           github={"https://github.com/T0MLE/WCS-project1"}
         />
       </div>
