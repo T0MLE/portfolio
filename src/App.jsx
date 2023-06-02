@@ -1,6 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.scss";
-import Cursor from "./components/cursor";
+import Cursor from "./components/Cursor";
 import Navbar from "./components/Navbar/Navbar";
 import Home from "./pages/Home/Home";
 import { useContext } from "react";
