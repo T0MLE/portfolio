@@ -30,21 +30,20 @@ $second-font : Josefin sans ;
         flex-direction: row;
         flex-wrap: nowrap;
         margin: 16px;
-        .char {
+        .charName {
             color: #009563;
             // color: #EE4E2B;
             // color: #5266AB;
+            transform: translateY(-300px);
+            transition: transform .5s;
+            background-color: transparent;
 
         }
+    
         }
     }
 
-    .char {
-        transform: translateY(-300px);
-        transition: transform .5s;
-        background-color: transparent;
 
-    }
 
     h2{
         display: flex;
@@ -60,9 +59,15 @@ $second-font : Josefin sans ;
         margin-top: 140px;
         .word {
             display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        margin: 4px;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin: 4px;
+            .char {
+                transform: translateY(-300px);
+                transition: transform .5s;
+                background-color: transparent;
+    
+        }
         }
 
     }
@@ -77,7 +82,7 @@ $second-font : Josefin sans ;
         margin-bottom: 80px;
         margin-top: -3vw;
         opacity: 0;
-        transition: all 1s ease-in-out;
+        transition: all 0.5s ease-in-out;
 
     }
 
@@ -106,6 +111,12 @@ $second-font : Josefin sans ;
         p {
             font-size: 1rem;
             font-style: normal;    
+        }
+        #lang {
+            position: absolute;
+            bottom: 3vh;
+            font-size: 1.3rem;
+
         }
     }
 

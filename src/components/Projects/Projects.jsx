@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Draggable from "react-draggable";
 import Project from "../project/Project";
 import ScrollingText from "../ScrollingText/ScrollingText";
@@ -9,20 +9,40 @@ import wonder from "../../assets/wondermatch.png";
 import portfolio from "../../assets/portfolio.png";
 import star from "../../assets/star-symbol.png";
 
+import { useContext } from "react";
+
+import TransitionContext from "../../context/Transition";
+
 function Projects() {
+  const useMediaQuery = (query) => {
+    const [matches, setMatches] = useState(window.matchMedia(query).matches);
+
+    useEffect(() => {
+      const mediaQuery = window.matchMedia(query);
+      const handleResize = () => setMatches(mediaQuery.matches);
+
+      mediaQuery.addListener(handleResize);
+      return () => mediaQuery.removeListener(handleResize);
+    }, [query]);
+
+    return matches;
+  };
+
+  const isMobile = useMediaQuery("(max-width: 700px)");
+
+  const { language } = useContext(TransitionContext);
+
   const text = (
     <>
-      {" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS <img style={{ height: "5Opx", width: "50px" }} src={star} />{" "}
-      PROJECTS
+      PROJECTS <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS{" "}
+      <img src={star} className="star-img" /> PROJECTS
     </>
   );
   const [zIndex, setZIndex] = useState({
@@ -154,7 +174,9 @@ function Projects() {
                 <div className="dot" />
                 <div className="dot" />
               </div>
-              Mon_incroyable_portfolio.png
+              {language === "fr"
+                ? "Mon_incroyable_portfolio.png"
+                : "My_amazing_portfolio.png"}
             </div>
           </strong>
           <div className="projet-wrapper">
@@ -162,6 +184,7 @@ function Projects() {
               img={portfolio}
               stack={["HTML", "SCSS", "React"]}
               github={"https://github.com/T0MLE/portfolio"}
+              key={4}
             />
           </div>
         </div>
@@ -234,7 +257,11 @@ function Projects() {
           </div>
           Wonder_Match.png
         </div>
-        <Project img={wonder} stack={["HTML", "CSS", "React"]} />
+        <Project
+          img={wonder}
+          stack={["HTML", "CSS", "React"]}
+          route={"/wondermatch"}
+        />
       </div>
       <div className="projet-wrapper">
         <div className="handle" style={{ backgroundColor: "#F6F5F1" }}>
@@ -254,7 +281,7 @@ function Projects() {
   return (
     <>
       <ScrollingText content={text} direction="left" />
-      {window.innerWidth >= 701 ? desktop() : mobile()}
+      {!isMobile ? desktop() : mobile()}
     </>
   );
 }

@@ -1,8 +1,7 @@
 import ScrollingText from "../ScrollingText/ScrollingText";
 import "./contact.scss";
 import shy from "../../assets/shy.svg";
-import star from '../../assets/star-symbol.png'
-
+import star from "../../assets/star-symbol.png";
 
 function Contact() {
   const handleMouse = (e, element) => {
@@ -16,10 +15,33 @@ function Contact() {
     element.style.transform = "translate(0px, 0px)";
   };
 
-  const text1 =
-    <>WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> WORK TOGETHER <img style={{height : '5Opx', width : '50px'}} src={star}/> </>
-  const text2 =
-  <>GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/> GET IN TOUCH <img style={{height : '5Opx', width : '50px'}} src={star}/></>
+  const text1 = (
+    <>
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+      WORK TOGETHER <img src={star} className='star-img'/>{" "}
+    </>
+  );
+  const text2 = (
+    <>
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>{" "}
+      GET IN TOUCH <img src={star} className='star-img'/>
+    </>
+  );
   return (
     <div>
       <ScrollingText content={text1} direction="right" />

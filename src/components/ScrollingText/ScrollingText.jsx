@@ -9,7 +9,7 @@ function ScrollingText({ content, direction }) {
     const handleScroll = () => {
       direction === "left"
         ? setPos(-3000 + window.scrollY)
-        : setPos(-1500 - window.scrollY);
+        : setPos(-1000 - window.scrollY);
     };
 
     window.addEventListener("scroll", handleScroll);

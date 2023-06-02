@@ -7,7 +7,8 @@ import TransitionContext from "../../context/Transition";
 function Navbar() {
   const navigate = useNavigate();
 
-  const { setTransition } = useContext(TransitionContext);
+  const { setTransition, language, setLanguage, setIsClicked } =
+    useContext(TransitionContext);
 
   const handleClickHome = () => {
     if (window.location.pathname === "/") {
@@ -19,7 +20,7 @@ function Navbar() {
       }, 500);
       setTimeout(function () {
         setTransition(false);
-      }, 1000);
+      }, 700);
     }
   };
 
@@ -37,19 +38,38 @@ function Navbar() {
     btnref.current.style.transform = "translate(0px, 0px)";
   };
 
+  const handleLang = () => {
+    setIsClicked(true);
+    setTimeout(() => {
+      setIsClicked(false);
+    }, 1000);
+    setTimeout(() => {
+      if (language == "fr") {
+        setLanguage("eng");
+      } else {
+        setLanguage("fr");
+      }
+    }, 700);
+  };
+
   return (
     <div className="navbar">
       <p onClick={handleClickHome}>Tom Le Laurain</p>
-      <a href="mailto:lelaurain.tom@gmail.com">
-        <button
-          ref={btnref}
-          className="contact-btn"
-          onMouseMove={window.innerWidth >= 1000 && handleMouse}
-          onMouseLeave={window.innerWidth >= 1000 && handleMouseOut}
-        >
-          Contact
-        </button>
-      </a>
+      <div>
+        <p onClick={handleLang}>
+          {language === "fr" ? "hello ?" : "bonjour ?"}
+        </p>
+        <a href="mailto:lelaurain.tom@gmail.com">
+          <button
+            ref={btnref}
+            className="contact-btn"
+            onMouseMove={window.innerWidth >= 1000 && handleMouse}
+            onMouseLeave={window.innerWidth >= 1000 && handleMouseOut}
+          >
+            Contact
+          </button>
+        </a>
+      </div>
     </div>
   );
 }
