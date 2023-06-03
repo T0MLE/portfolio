@@ -30,10 +30,11 @@ function Project({ img, stack, github, website, route, id }) {
     <div className="project">
       <img className="img-proj" src={img} onClick={handleClick} />
       <div className="stack-container">
-        {" "}
-        {stack.map((e) => {
-          return <StackBtn content={e} key={stack.indexOf(e)} />;
-        })}
+        <div>
+          {stack.map((e) => {
+            return <StackBtn content={e} key={stack.indexOf(e)} />;
+          })}
+        </div>
         <div className="github-link">
           <a href={github} target="_blank" rel="noreferrer">
             {" "}

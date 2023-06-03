@@ -32,6 +32,12 @@ $background-color-1 : #F6F5F1;
         p {
             font-size: 1rem;
             cursor: pointer;
+            border-bottom: 1.5px solid transparent;
+            transition: border 0.3s;
+            &:hover {
+                border-bottom: 1.5px solid black;
+                transition: all 0.3s;
+            }
         }
         .contact-btn {
             font-family : ClearfaceITCW01;

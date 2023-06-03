@@ -56,7 +56,7 @@ function Navbar() {
     <div className="navbar">
       <p onClick={handleClickHome}>Tom Le Laurain</p>
       <div>
-        <p onClick={handleLang}>
+        <p id='language' onClick={handleLang}>
           {language === "fr" ? "hello ?" : "bonjour ?"}
         </p>
         <a href="mailto:lelaurain.tom@gmail.com">
