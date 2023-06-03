@@ -237,6 +237,7 @@ function Projects() {
           img={WFC}
           stack={["HTML", "SCSS", "React"]}
           github={"https://github.com/T0MLE/WCS-Projet2"}
+          website={"https://wildfitnessclub.netlify.app/"}
         />
       </div>
       <div className="projet-wrapper">
@@ -253,6 +254,7 @@ function Projects() {
           img={mario}
           stack={["HTML", "CSS", "JS"]}
           github={"https://github.com/T0MLE/WCS-project1"}
+          website={"https://t0mle.github.io/WCS-project1/"}
         />
       </div>
       <div className="projet-wrapper">
@@ -286,6 +288,7 @@ function Projects() {
           img={portfolio}
           stack={["HTML", "SCSS", "React"]}
           github={"https://github.com/T0MLE/portfolio"}
+          id={4}
         />
       </div>
     </div>
