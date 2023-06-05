@@ -86,20 +86,16 @@ function Header() {
     gsap.to(".char", {
       y: 0,
       stagger: 0.02,
-      duration: 0.04,
+      duration: 0.1,
     });
     gsap.to(".charName", {
       y: 0,
-      stagger: 0.03,
-      duration: 0.2,
+      delay: 0.2,
+      stagger: 0.04,
+      duration: 0.3,
     });
     gsap.to("#desc", {
-      delay: 0.2,
-      duration: 0.1,
-      opacity: 1,
-    });
-    gsap.to("#lang", {
-      delay: 0.5,
+      delay: 0.6,
       duration: 0.1,
       opacity: 1,
     });
