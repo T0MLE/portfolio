@@ -20,9 +20,9 @@ $second-font : Josefin sans ;
         flex-direction: row;
         flex-wrap: nowrap;
         font-family: $First-font;
-        font-size: clamp(4.5rem, 13vw, 13vw) ;
+        font-size: clamp(4.5rem, 12vw, 12vw) ;
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-        line-height: clamp(4.5rem, 13vw, 13vw);
+        line-height: clamp(4.5rem, 12vw, 12vw);
 
         .word {
             display: flex;

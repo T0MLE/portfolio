@@ -82,27 +82,6 @@ function Header() {
     </h2>
   );
 
-  // useEffect(() => {
-  //   setTimeout(() => {
-  //     gsap.to(".char", {
-  //       y: 0,
-  //       stagger: 0.02,
-  //       duration: 0.1,
-  //     });
-  //   }, 300);
-
-  //   gsap.to(".charName", {
-  //     y: 0,
-  //     stagger: 0.02,
-  //     duration: 0.1,
-  //   });
-  //   // gsap.to("#desc", {
-  //   //   delay: 0.2,
-  //   //   duration: 0.1,
-  //   //   opacity: 1,
-  //   // });
-  // }, []);
-
   useEffect(() => {
     gsap.to(".char", {
       y: 0,
